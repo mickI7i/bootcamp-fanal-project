@@ -351,6 +351,7 @@ h6,
     border: 2px black solid;
     opacity: 0.7;
     transition: 0.5s;
+    border-radius: 17px;
     &:hover{
         background-color: aqua;
         border: 2px black transparent;
@@ -368,6 +369,7 @@ h6,
     border: 1.5px black solid;
     opacity: 0.7;
     transition: 0.7s;
+    border-radius: 10px;
     &:hover{
         color: black;
         background-color: aqua;
@@ -542,6 +544,32 @@ h6,
 .img-hover-zoom:hover {
     transform: scale(1.1); /* Scale the image down (zoom out effect) */
 }
+
+.bor-redius{
+    border-radius: 10px;
+}
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    
+    object-fit: cover;
+}
+
 
 
 

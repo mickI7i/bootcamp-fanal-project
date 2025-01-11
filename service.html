@@ -376,23 +376,67 @@
     <!-- Vendor Start -->
        
     <hr class="stats-hr">
-  <div class="statistics">
-    <h4 id="stats-header">Çfarë përfaqëson marka AS Rental?</h4>
-    <div class="stat-item">
-        <img src="img/personcutout.png" alt="icon of people" id="person-cut-out">
-        <p>20.000+ Klient të kënaqur!</p>
-      </div>
-       <div class="stat-item">
-        <img src="img/buildingcutout.png" alt="icon of a building" id="building-icon">
-        <p>Në dispozicion në 100 vende!</p>
-       </div>
+<div class="statistics">
+  <h4 id="stats-header">Çfarë përfaqëson marka AS Rental?</h4>
 
-    <div class="stat-item">
-        <img src="img/carcutout2.png" alt="icon of a car" id="car-icon">
-        <p>500+ Vetura!</p>
-      </div>
+  <div class="stat-item">
+    <img src="img/personcutout.png" alt="icon of people" id="person-cut-out">
+    <p class="counter" data-target="20000">0</p>
+    <p>Klient të kënaqur!</p>
+  </div>
+
+  <div class="stat-item">
+    <img src="img/buildingcutout.png" alt="icon of a building" id="building-icon">
+    <p class="counter" data-target="100">0</p>
+    <p>Vende!</p>
+  </div>
+
+  <div class="stat-item">
+    <img src="img/carcutout2.png" alt="icon of a car" id="car-icon">
+    <p class="counter" data-target="500">0</p>
+    <p>Vetura!</p>
+  </div>
 </div>
 <hr class="stats-hr">
+
+<script>
+    const counters = document.querySelectorAll('.counter'); // 
+  
+  
+    const startCounter = (counter) => {
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText.replace('+', ''); 
+  
+        const increment = target / 200; 
+  
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}+`;
+          setTimeout(updateCounter, 10); 
+        } else {
+          counter.innerText = `${target}+`;
+        }
+      };
+  
+      updateCounter();
+    };
+  
+   
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          startCounter(counter); 
+          observer.unobserve(counter); 
+        }
+      });
+    }, { threshold: 0.5 }); 
+  
+    
+    counters.forEach(counter => {
+      observer.observe(counter);
+    });
+  </script>
     <!-- Vendor End -->
 
 
@@ -415,8 +459,8 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-uppercase text-light mb-4">Linqe të dobishme</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
+                    <a class="text-body mb-2" href="terms.html"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
+                    <a class="text-body mb-2" href="terms.html"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
@@ -464,6 +508,7 @@
         <p class="mb-2 text-center text-body">&copy; <a href="#">AS Rental</a>. All Rights Reserved.</p>
         <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
     </div>
+
 
     <!-- Footer End -->
 

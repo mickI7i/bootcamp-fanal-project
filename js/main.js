@@ -142,6 +142,26 @@ $(document).ready(function () {
     });
 });
 
+document.addEventListener("click", function (event) {
+    if (event.target.matches('[data-fullscreen]')) {
+        const src = event.target.src;
+
+        // Create overlay
+        const overlay = document.createElement('div');
+        overlay.classList.add('fullscreen-overlay');
+        overlay.innerHTML = `<img src="${src}" alt="Fullscreen Image">`;
+
+        // Close fullscreen on click
+        overlay.addEventListener('click', function () {
+            overlay.remove();
+        });
+
+        // Append overlay to body
+        document.body.appendChild(overlay);
+    }
+});
+
+
 
 
     

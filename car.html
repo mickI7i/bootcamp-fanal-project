@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AS Rental - Car Rental Site </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+     <link href="css/main.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 id="main-name" class="text-uppercase text-primary mb-1">AS Rental</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link ">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Cars</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="car.html" class="dropdown-item active">Lista e makinave</a>
+                                <a href="detail.html" class="dropdown-item">Detajet e makinave</a>
+                                <a href="booking.html" class="dropdown-item">Rezervimi i makinave</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="team.html" class="dropdown-item">Ekipa Jonë</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="index.html"  class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Search Start -->
+    <div class="container-fluid bg-white pt-3 px-lg-5">
+        <div id="firstForm" class="row mx-n2">
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Lokacioni i marrjes</option>
+                    <option value="1">Prishtinë</option>
+                    <option value="2">Mitrovicë</option>
+                    <option value="3">Pejë</option>
+                    <option value="4">Podujevë</option>
+                    <option value="5">Ferizaj</option>
+                    <option value="6">Prizren</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Lokacioni i kthimit</option>
+                    <option value="1">Prishtinë</option>
+                    <option value="2">Mitrovicë</option>
+                    <option value="3">Pejë</option>
+                    <option value="4">Podujevë</option>
+                    <option value="5">Ferizaj</option>
+                    <option value="6">Prizren</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="date mb-3" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Data e marrjes"
+                        data-target="#date" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="time mb-3" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Koha e marrjes"
+                        data-target="#time" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Zgjidhni një makinë</option>
+                    <option value="1">BMW 318D</option>
+                    <option value="2">Mercedes-AMG EQE SUV</option>
+                    <option value="3">Audi R8</option>
+                    <option value="4">Porsche 911Gt Rs</option>
+                    <option value="5">Nissan skyline r34</option>
+                    <option value="6">Volkswagen Arteon</option>
+                    <option value="7">Volvo S60</option>
+                    <option value="8">Supra Mk5/A90</option>
+                    <option value="9">BMW IX</option>
+                    <option value="10">GWM Wey 05</option>
+                    <option value="11">Tesla Model 3</option>
+                    <option value="13">Mercedes-Benz CLA</option>
+                    <option value="14">Mercedes-EQ EQS</option>
+                    <option value="15">Škoda ENYAQ iV</option>
+                    <option value="16">Opel Astra</option>
+                    <option value="17">Honda Civic Type R</option>
+                    <option value="18">BMW M2</option>
+                    <option value="19">Audi A4</option>
+                    <option value="20">Nissan Versa</option>
+                    <option value="21">MINI Cooper</option>
+                    <option value="22">Volkswagen Golf R</option>
+                    <option value="23">Volkswagen Golf MK7</option>
+                    <option value="24">Dacia Logan</option>
+                    <option value="25">Dacia Sandero</option>
+
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <button class="btn btn-primary btn-block mb-3" id="searchButton" type="button" style="height: 50px;">Kërko</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalLabel">Plotësoni Detajet Tuaja</h5>
+                    
+                </div>
+                <div class="modal-body">
+                    <form id="secondForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Emri</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Numri i telefonit</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Enter your phone number" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('#searchButton').on('click', function(){
+                $('#formModal').modal('show');
+            });
+
+            
+            $('#secondForm').on('submit', function(event){
+                event.preventDefault(); 
+                $('#formModal').modal('hide');
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
+
+    <!-- Search End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header">
+        <h1 class="display-3 text-uppercase text-white mb-3">Lista e Makinave</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href="index.html">Home</a></h6>
+            <h6 class="text-body m-0 px-3">/</h6>
+            <h6 class="text-uppercase text-body m-0">Lista e Makinave</h6>
+        </div>
+    </div>
+        <!-- Page Header Start -->
+
+
+    <!-- Rent A Car Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">03</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Gjeni Makinën Tuaj</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/bmw-318dd.jpg" alt="picture of a bmw 318d">
+                        <h4 class="text-uppercase mb-4">BMW 318d </h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2020</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>47K</span>
+                            </div>
+                        </div>
+                        <form class="rent-form">
+                            <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" id="open-modal-btn-1">$140.00/Day</button>
+                        </form>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    
+                   </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item active mb-4">
+                        <img class="img-fluid mb-4" src="img/Amg.avif" alt="picture of an amg mercedes suv">
+                        <h4 class="text-uppercase mb-4">Mercedes-AMG EQE SUV</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2024</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>13K</span>
+                            </div>
+                        </div>
+                        <form  class="rent-form">
+                        <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" id="open-modal-btn-2" href="">$230.00/Day</button>
+                    </form>
+                    </div>
+                </div>
+                 
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/audi-r8-.webp" alt="picture of audi r8">
+                        <h4 class="text-uppercase mb-4">Audi r8</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2020</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>Semi-AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>41K</span>
+                            </div>
+                        </div>
+                        <form class="rent-form" >
+                        <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" href="">$160.00/Day</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/porsche-911gtrs.avif" alt="picture of a porsche 911">
+                        <h4 class="text-uppercase mb-4">Porsche 911 gt rs </h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2021</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>MANUAL</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>89K</span>
+                            </div>
+                        </div>
+                        <from class="rent-form">
+                        <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" href="">$378.00/Day</button>
+                        </from>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div  class="box-shodow-1 rent-item mb-4">
+                        <img  class="img-fluid mb-4" src="img/nisssan-sky copy.jpg" alt="picture of a nissan skyline">
+                        <h4 class="text-uppercase mb-4">nissan skyline r34</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2017</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>MANUAL</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>129K</span>
+                            </div>
+                        </div>
+                        <from class="rent-form">
+                        <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" href="">$389.00/Day</button>
+                        </from>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/volk-arton.jpg" alt="picture of a Volkswagen arteon">
+                        <h4 class="text-uppercase mb-4">Volkswagen Arteon</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>21K</span>
+                            </div>
+                        </div>
+                        <form class="rent-form">
+                        <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" href="">$189.00/Day</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/volvos60.jpg" alt="picture of a volvo s60">
+                        <h4 class="text-uppercase mb-4">Volvo S60</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2019</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>113K</span>
+                            </div>
+                        </div>
+                        <form class="rent-form">
+                        <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" href="">80.00/Day</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/supra.jpg" alt="">
+                        <h4 class="text-uppercase mb-4">Supra Mk5/A90</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>34K</span>
+                            </div>
+                        </div>
+                        <form class="rent-form">
+                        <button type="button" class="btt-3 open-modal-btn btn btn-primary px-3" href="">$532.00/Day</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="box-shodow-1 rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/bmw-x1.jpg" alt="">
+                        <h4 class="text-uppercase mb-4">BMW IX</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>15K</span>
+                            </div>
+                        </div>
+                        <form class="rent-form">
+                        <button type="button" class="open-modal-btn btn btn-primary px-3 btt-3" href="">$529.00/Day</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rent A Car End -->
+
+    <!-- tabel start-->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-uppercase text-center mb-4">Lista e Makinave</h2>
+            <div class="table-responsive"></div>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Emri i vetures</th>
+                            <th>Modeli</th>
+                            <th>Viti</th>
+                            <th>Ngjyra</th>
+                            <th>Numri i kilometrave</th>
+                            <th>Çmimi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>BMW</td>
+                        <td>318d</td>
+                        <td>2020</td>
+                        <td>Metallic Gray</td>
+                        <td>47,000</td>
+                        <td>$140.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes</td>
+                        <td>AMG EQE SUV</td>
+                        <td>2024</td>
+                        <td>White</td>
+                        <td>13,000</td>
+                        <td>$230.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Audi</td>
+                        <td>R8</td>
+                        <td>2020</td>
+                        <td>White</td>
+                        <td>41,000</td>
+                        <td>$160.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Porsche</td>
+                        <td>911 GT RS</td>
+                        <td>2021</td>
+                        <td>Blue</td>
+                        <td>89,000</td>
+                        <td>$378.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Nissan</td>
+                        <td>Skyline R34</td>
+                        <td>2017</td>
+                        <td>Blue</td>
+                        <td>129,000</td>
+                        <td>$389.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Volkswagen</td>
+                        <td>Arteon</td>
+                        <td>2022</td>
+                        <td>Red</td>
+                        <td>21,000</td>
+                        <td>$189.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Volvo</td>
+                        <td>S60</td>
+                        <td>2019</td>
+                        <td>White</td>
+                        <td>133,000</td>
+                        <td>$80.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Supra</td>
+                        <td>Mk5/A90</td>
+                        <td>2023</td>
+                        <td>Metallic White </td>
+                        <td>34,000</td>
+                        <td>$532.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>BMW</td>
+                        <td>IX</td>
+                        <td>2023</td>
+                        <td>Metallic Dark Gray</td>
+                        <td>15,000</td>
+                        <td>$529.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>GWM</td>
+                        <td>Wey 05</td>
+                        <td>2021</td>
+                        <td>Black</td>
+                        <td>23,000</td>
+                        <td>$120.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Tesla</td>
+                        <td>Model 3</td>
+                        <td>2022</td>
+                        <td>White</td>
+                        <td>30.000</td>
+                        <td>$257.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-Benz</td>
+                        <td>CLA</td>
+                        <td>2021</td>
+                        <td>Black</td>
+                        <td>23,000</td>
+                        <td>$219.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-EQ</td>
+                        <td>EQS</td>
+                        <td>2023</td>
+                        <td>White</td>
+                        <td>5,000</td>
+                        <td>$300.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Škoda</td>
+                        <td>ENYAQ iV</td>
+                        <td>2022</td>
+                        <td>Black</td>
+                        <td>12,000</td>
+                        <td>$100.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Opel</td>
+                        <td>Astra</td>
+                        <td>2021</td>
+                        <td>White</td>
+                        <td>19,000</td>
+                        <td>$90.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Honda</td>
+                        <td>Civic Type R</td>
+                        <td>2020</td>
+                        <td>Red</td>
+                        <td>27,000</td>
+                        <td>$110.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>BMW</td>
+                        <td>M2</td>
+                        <td>2021</td>
+                        <td>Black</td>
+                        <td>8,000</td>
+                        <td>$250.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Audi</td>
+                        <td>A4</td>
+                        <td>2020</td>
+                        <td>White</td>
+                        <td>31,000</td>
+                        <td>$130.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Nissan</td>
+                        <td>Versa</td>
+                        <td>2021</td>
+                        <td>Black</td>
+                        <td>14,000</td>
+                        <td>$70.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>MINI</td>
+                        <td>Cooper</td>
+                        <td>2022</td>
+                        <td>Red</td>
+                        <td>3,000</td>
+                        <td>$180.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Volkswagen</td>
+                        <td>Golf R</td>
+                        <td>2021</td>
+                        <td>White</td>
+                        <td>7,000</td>
+                        <td>$190.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Volkswagen</td>
+                        <td>Golf MK7</td>
+                        <td>2020</td>
+                        <td>Black</td>
+                        <td>11,000</td>
+                        <td>$160.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Dacia</td>
+                        <td>Logan</td>
+                        <td>2021</td>
+                        <td>White</td>
+                        <td>9,000</td>
+                        <td>$50.00/Day</td>
+                    </tr>
+                    <tr>
+                        <td>Dacia</td>
+                        <td>Sandero</td>
+                        <td>2022</td>
+                        <td>Red</td>
+                        <td>5,000</td>
+                        <td>$40.00/Day</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a class="btn btt-3 btn-primary" href="booking.html">Rezervo tani</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- tabrl end -->
+
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row mx-0">
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <img id="bner-2" class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner1.png" alt="">
+                        <div class="text-right">
+                            <h3 class="text-uppercase text-light mb-3">Dëshironi të bëheni shofer?</h3>
+                            <p class="mb-4">Dëshironi të bëheni shofer i një makine luksoze sot? Atëherë jeni ne vendin e duhur.
+                                Kliokni "Fillo Këtu".
+                            </p>
+                            <a class="btn btn-primary py-2 px-4" href="">Fillo Këtu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <div class="text-left">
+                            <h3 class="text-uppercase text-light mb-3">Jeni duke kerkuar një makinë?</h3>
+                            <p style="margin-top: 39px;" class="mb-4">Klikoni "Fillo Këtu" për të gjetur makinën e duhur për ju.</p>
+                            <a style="margin-top: 26px;" class="btn btn-primary py-2 px-4" href="">Fillo Këtu</a>
+                        </div>
+                        <img id="bner-2" class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/ms-2-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Vendor Start -->
+
+    <hr class="stats-hr">
+    <div class="statistics">
+      <h4 id="stats-header">Çfarë përfaqëson marka AS Rental?</h4>
+      <div class="stat-item">
+          <img src="img/personcutout.png" alt="icon of people" id="person-cut-out">
+          <p>20.000+ Klient të kënaqur!</p>
+        </div>
+         <div class="stat-item">
+          <img src="img/buildingcutout.png" alt="icon of a building" id="building-icon">
+          <p>Në dispozicion në 100 vende!</p>
+         </div>
+  
+      <div class="stat-item">
+          <img src="img/carcutout2.png" alt="icon of a car" id="car-icon">
+          <p>500+ Vetura!</p>
+        </div>
+  </div>
+  <hr class="stats-hr">
+   
+    <!-- Vendor End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Na kontaktoni</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Haxhi Zeka, Prishtine, Kosovë</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+383 448888888</p>
+                <a href="#"></a><p><i class="fa fa-envelope text-white mr-3"></i>info@asrental.com</p></a>
+                <h6 class="text-uppercase text-white py-2">Na Ndiqni</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Linqe të dobishme</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
+                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Help & FQAs</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/mazdarx7.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/nissanskyline.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/mercedesc63.jpg" alt="" style="height: 100%;"></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/bmwm8comp.avif" alt="" style="height: 100%;"></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/porschepanamera.avif" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/corvettec6.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="E-mail">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary text-uppercase px-3">Regjistrohu</button>
+                        </div>
+                    </div>
+                </div>
+                <i>Regjistrohuni për lajme të reja.</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <p class="mb-2 text-center text-body">&copy; <a href="#">AS Rental</a>. All Rights Reserved.</p>
+        <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

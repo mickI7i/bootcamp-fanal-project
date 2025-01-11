@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AS Rental - Car Rental Site </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+     <link href="css/main.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 id="main-name" class="text-uppercase text-primary mb-1">AS Rental</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cars</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="car.html" class="dropdown-item">Lista e makinave</a>
+                                <a href="detail.html" class="dropdown-item">Detajet e makinave</a>
+                                <a href="booking.html" class="dropdown-item">Rezervimi i makinave</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="team.html" class="dropdown-item">Ekipa Jonë</a>
+                                <a href="testimonial.html" class="dropdown-item active">Testimonia</a>
+                            </div>
+                        </div>
+                        <a href="index.html"  class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Search Start -->
+    <div class="container-fluid bg-white pt-3 px-lg-5">
+        <div id="firstForm" class="row mx-n2">
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Lokacioni i marrjes</option>
+                    <option value="1">Prishtinë</option>
+                    <option value="2">Mitrovicë</option>
+                    <option value="3">Pejë</option>
+                    <option value="4">Podujevë</option>
+                    <option value="5">Ferizaj</option>
+                    <option value="6">Prizren</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Lokacioni i kthimit</option>
+                    <option value="1">Prishtinë</option>
+                    <option value="2">Mitrovicë</option>
+                    <option value="3">Pejë</option>
+                    <option value="4">Podujevë</option>
+                    <option value="5">Ferizaj</option>
+                    <option value="6">Prizren</option>>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="date mb-3" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Data e marrjes"
+                        data-target="#date" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="time mb-3" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Koha e marrjes"
+                        data-target="#time" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Zgjidhni një makinë</option>
+                    <option value="1">BMW 318D</option>
+                    <option value="2">Mercedes-AMG EQE SUV</option>
+                    <option value="3">Audi R8</option>
+                    <option value="4">Porsche 911Gt Rs</option>
+                    <option value="5">Nissan skyline r34</option>
+                    <option value="6">Volkswagen Arteon</option>
+                    <option value="7">Volvo S60</option>
+                    <option value="8">Supra Mk5/A90</option>
+                    <option value="9">BMW IX</option>
+                    <option value="10">GWM Wey 05</option>
+                    <option value="11">Tesla Model 3</option>
+                    <option value="13">Mercedes-Benz CLA</option>
+                    <option value="14">Mercedes-EQ EQS</option>
+                    <option value="15">Škoda ENYAQ iV</option>
+                    <option value="16">Opel Astra</option>
+                    <option value="17">Honda Civic Type R</option>
+                    <option value="18">BMW M2</option>
+                    <option value="19">Audi A4</option>
+                    <option value="20">Nissan Versa</option>
+                    <option value="21">MINI Cooper</option>
+                    <option value="22">Volkswagen Golf R</option>
+                    <option value="23">Volkswagen Golf MK7</option>
+                    <option value="24">Dacia Logan</option>
+                    <option value="25">Dacia Sandero</option>>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <button class="btn btn-primary btn-block mb-3" id="searchButton" type="button" style="height: 50px;">Kërko</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalLabel">Plotësoni Detajet Tuaja!</h5>
+                    
+                </div>
+                <div class="modal-body">
+                    <form id="secondForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Emri</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail Adresa</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Numri i Telefonit</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Enter your phone number" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('#searchButton').on('click', function(){
+                $('#formModal').modal('show');
+            });
+
+            
+            $('#secondForm').on('submit', function(event){
+                event.preventDefault(); 
+                $('#formModal').modal('hide');
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
+
+    <!-- Search End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header">
+        <h1 class="display-3 text-uppercase text-white mb-3">Testimonial</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href="">Home</a></h6>
+            <h6 class="text-body m-0 px-3">/</h6>
+            <h6 class="text-uppercase text-body m-0">Testimonial</h6>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-1 text-primary text-center">05</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Klientët tanë thonë</h1>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/arlindkrasniqi.jpg" alt="picture of a customer">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Arlind Krasniqi</h4>
+                    <i class="mb-2">Doktor</i>
+                    <p class="m-0">Makina ishte e pastër dhe funksiononte shumë mirë. 
+                        Procesi ishte i shpejtë dhe pa komplikime. Shërbim i kënaqshëm dhe staf shumë ndihmues!</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/erjetahoxha.jpg" alt="picture of a customer">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Erjeta Hoxha</h4>
+                    <i class="mb-2">Mësuese</i>
+                    <p class="m-0">Shërbim i rregult dhe i organizuar. Makina ishte e re dhe në gjendje shumë të mirë. Procesi ishte i thjeshtë dhe pa vonesa.
+                        Do të zgjedh këtë kompani përsëri!
+                    </p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/altingashi.jpg" alt="picture of a customer">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Altin Gashi</h4>
+                    <i class="mb-2">Inxhinier</i>
+                    <p class="m-0">Shërbim i shkëlqyer! Proces i thjesthë, staf miqësor dhe makina e pastër e mirëmbajtur.
+                         Marrja dhe dorëzimi ishin të lehta, pa tarifa të fshehura</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/luanberisha.jpg" alt="picture of a customer">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Luan Berisha</h4>
+                    <i class="mb-2">Avokat</i>
+                    <p class="m-0">Shërbim i jashtëzakonshëm! Makina ishte në gjendje të shkëlqyer dhe procesi i marrjes ishte i lehtë. Stafi ishte
+                        i sjellshëm dhe çmimet shumë të mira. E rekomandoj pa hezitim!
+                    </p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/Eliradajti.jpg" alt="picture of a customer">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Elira Dajti</h4>
+                    <i class="mb-2">Drejtor</i>
+                    <p class="m-0">Kam marrë një makinë me qira nga As Rendal dhe ishte një përvojë pozitive. Rezervimi ishte i thjeshtë dhe stafi i sportelit ishte miqësor dhe efikas, duke siguruar një proces pa shqetësime.</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/Arbenkoliqi.webp" alt="picture of a customer">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Arben Koliqi</h4>
+                    <i class="mb-2">Polic</i>
+                    <p class="m-0">
+                        Përvoja ime me As Rendal ishte e shkëlqyer. Rezervimi ishte i lehtë dhe stafi ishte i sjellshëm dhe profesional, duke bërë procesin pa probleme.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Vendor Start -->
+    <hr class="stats-hr">
+    <div class="statistics">
+      <h4 id="stats-header">Çfarë përfaqëson marka AS Rental?</h4>
+      <div class="stat-item">
+          <img src="img/personcutout.png" alt="icon of people" id="person-cut-out">
+          <p>20.000+ Klient të kënaqur!</p>
+        </div>
+         <div class="stat-item">
+          <img src="img/buildingcutout.png" alt="icon of a building" id="building-icon">
+          <p>Në dispozicion në 100 vende!</p>
+         </div>
+  
+      <div class="stat-item">
+          <img src="img/carcutout2.png" alt="icon of a car" id="car-icon">
+          <p>500+ Vetura!</p>
+        </div>
+  </div>
+  <hr class="stats-hr">
+              
+    <!-- Vendor End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;" id="contact">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Na kontaktoni</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Haxhi Zeka, Prishtinë, Kosovë</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+383 448888888</p>
+                <p><i class="fa fa-envelope text-white mr-3"></i>info@asrental.com</p>
+                <h6 class="text-uppercase text-white py-2">Na ndiqni</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://x.com/UniversumKS" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://www.facebook.com/universumcollege" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://www.linkedin.com/school/universum-university-college/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="https://www.instagram.com/universumcollege/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Linqe të dobishme</Link></h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
+                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Help & FQAs</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/mazdarx7.jpg" alt="picture of a mazda rx7"></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/nissanskyline.jpg" alt="picture of a nissan skyline"></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/mercedesc63.jpg" alt="picture of a mercedes c63" style="height: 100%;"></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/bmwm8comp.avif" alt="picture of a bmw m8 competition" style="height: 100%;"></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/porschepanamera.avif" alt="picture of a porsche panamera"></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/corvettec6.jpg" alt="picture of a corvette c6"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="E-mail">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary text-uppercase px-3">Regjistrohu</button>
+                        </div>
+                    </div>
+                </div>
+                <i>Regjistrohuni për lajme të reja.</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <p class="mb-2 text-center text-body">&copy; <a href="#">AS Rental</a>. All Rights Reserved.</p>
+        <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

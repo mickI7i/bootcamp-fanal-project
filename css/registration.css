@@ -1,0 +1,49 @@
+:root {
+    --spciy-pink: #836F70;
+    --don-juan: #5C4A4A;
+    --old-burgundy: #3F3130;
+    --temptress: #380001;
+    --raisin-black: #271E1F;
+}
+
+body {
+    background: url("..img/registration-background.jpg");
+    color: var(--spciy-pink)
+    
+}
+
+.form 
+{
+  background-color: var(--temptress);
+  border: 1px black solid;
+  width: 500px;
+  height: 700px;
+  padding: 150px;
+  margin: auto;
+  margin-top: 50px;
+  
+}
+
+#form-btn {
+    border-radius: 10px;
+    background-color: var(--old-burgundy);
+    color: black;
+    padding: 9px;
+    transition: 0.5s;
+    border: 1.3px solid black;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#form-btn:hover {
+    color: black;
+    background-color: orange;
+    padding: 13px;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.form-hr {
+   
+
+}
